@@ -2,14 +2,14 @@
 # Вывести каждое слово с новой строки. Строки необходимо пронумеровать. Если в слово длинное, выводить только первые 10 букв в слове.
 my_str = input("insert str: ")
 for i in range(len(my_str)):
-    print(str(i + 1), "\n".join(my_str.split( ))+".")
+    print(str(i + 1), "\n".join(my_str.split()))
 
 
 
 
 ok = input("OK?")
 
-# print(str(i + 1), my_str[i])
+# print(str(i + 1), my_str[i]) .split( ))
 #my_str = input("insert str: ")
 #print("\n".join(my_str.split())+".")
 #for i in range(l):
