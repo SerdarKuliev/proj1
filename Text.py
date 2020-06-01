@@ -91,3 +91,14 @@ for
 
 for ind, el in enumerate(["one", "two"], 1):
     print(ind, el)
+
+
+print("Наименования "+ str(my_set1.keys()))
+print(my_set1.values())
+print(my_set1.items())
+print("Наименования "+ str(my_set2.keys()))
+print(my_set2.values())
+print(my_set2.items())
+print("Наименования "+ str(my_set3.keys()))
+print(my_set3.values())
+print(my_set3.items())
