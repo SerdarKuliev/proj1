@@ -23,5 +23,5 @@ print(my_list)
 my_list.sort(reverse = True)
 print(my_list)
 
-ok = input("Не уверен что правильно сделал, очень не просто мне это даётся.")
+ok = input("Не уверен что правильно сделал.")
 

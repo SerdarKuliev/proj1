@@ -7,7 +7,8 @@
 
 
 my_list = input("Введи данные: ")
-print(my_list[n+9])
+print(my_list)
+n = 0
 my_list[n], my_list[n+1] = my_list[n+1], my_list[n]
 my_list[n+2], my_list[n+3] = my_list[n+3], my_list[n+2]
 my_list[n+4], my_list[n+5] = my_list[n+5], my_list[n+4]
