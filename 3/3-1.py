@@ -1,7 +1,5 @@
 #1. Реализовать функцию, принимающую два числа (позиционные аргументы) и выполняющую их деление.
 #Числа запрашивать у пользователя, предусмотреть обработку ситуации деления на ноль.
-# сто то в скобках функции, деление
-#трай ексев можно с ней или без
 
 def my_f(num, num2):
     global n
@@ -11,14 +9,8 @@ print("Your numbers: " + str(num) + " and " + str(num2))
 try:
     num = int(num)
     num2 = int(num2)
-    n = num / num2
+    n = int(num / num2)
+    print((str(num)) + ":" + (str(num2)) + "=" + (str(n)))
 except (ValueError, ZeroDivisionError):
-    print("it's not number or 0.")
-
-print(int(n))
-
-
-
-
-
-
+    print("ERROR, it's 0 or not number.")
+OK = input("OK?")
