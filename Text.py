@@ -1,3 +1,6 @@
+#2 урок________________________________________________________________
+
+
 for i in "people"
     print(i)
 
@@ -101,4 +104,47 @@ print(my_set2.values())
 print(my_set2.items())
 print("Наименования "+ str(my_set3.keys()))
 print(my_set3.values())
-print(my_set3.items())
+print(my_set3.items()
+
+
+
+
+      #-------------------------------------3 урок
+фУНКЦИИ
+DEF MY_SUM(arg_1,arg_2)
+res= arg_1 + arg_2
+
+def my_f(s1, s2):
+    my_sum = s1 + s2
+    my_f(12, 22)
+    print(f"Hello")
+
+print(my_f())
+
+def my_f(s1, s2):
+    my_sum = s1 + s2
+    my_f(12, 22)
+    return f"sum:{my_sum})???
+
+print(my_f())
+
+def my_f(**kwargs):
+    return kwargs
+
+
+print(my_f(el_1=12, el_2=22, el_3=(1, 2)))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

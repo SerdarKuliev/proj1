@@ -7,14 +7,17 @@
 
 
 my_list = input("Введи данные: ")
-print(my_list)
-n = 0
-my_list[n], my_list[n+1] = my_list[n+1], my_list[n]
-my_list[n+2], my_list[n+3] = my_list[n+3], my_list[n+2]
-my_list[n+4], my_list[n+5] = my_list[n+5], my_list[n+4]
-my_list[n+6], my_list[n+7] = my_list[n+7], my_list[n+6]
-my_list[n+8], my_list[n+9] = my_list[n+9], my_list[n+8]
 
+for i in range enumerate(my_list):
+my_list[n-1], my_list[n] = my_list[n], my_list[n-1]
 
 print("Кажется получилось: "+ str(my_list))
+
+i = 0
+print(f'оз')
+while i=1< len(a)
+    if i%2 ++0
+        a.insert(i, a.pop(i+1)))
+    i+=1
+print(f'оз {a}')
 

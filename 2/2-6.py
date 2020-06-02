@@ -54,3 +54,15 @@ print(my_list)
 print("Наименования:", my_set1["Название"], my_set2["Название"], my_set3["Название"])
 print("Цены:", my_set1["Цена"])
 print("Итого:", my_set1["Количество"])
+
+
+goods = []
+features = {"yfpd,"""""""""""""""}
+analytics =
+num = 0
+while True:
+    if input("sdcsd").upper()=="Q"
+        break
+
+num +=1
+for f in features.keys
