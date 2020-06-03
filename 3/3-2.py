@@ -1,15 +1,13 @@
-#именнованные аргументы
+#2. Реализовать функцию, принимающую несколько параметров, описывающих данные пользователя:
+# имя, фамилия, год рождения, город проживания, email, телефон.
+# Функция должна принимать параметры как именованные аргументы.
+# Реализовать вывод данных о пользователе одной строкой.
+
+def my_f(f1, f2, f3, f4, f5, f6):
+    return f1 + f2 + f3 + f4 + f5 + f6
+print(my_f(input("Insert your name: "), input("Insert your surname: "), input("Insert your year of a birth: "), input("Insert your city: "), input("Insert your email: "), input("Insert your phone number: ")))
+
+# Не выходит разделить данные в 8 строке, ни join ни split не помогли
 
 
 
-
-def my_f():
-    global n #nonlocal
-    r1 = 56
-    r2 = 57
-    r3 = 58
-    n =(r1*r2)/r3
-    total = n**5
-    return total
-print(my_f())
-print(n)

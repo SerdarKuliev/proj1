@@ -16,8 +16,6 @@ chr 90=z
 abs()
 round()
 
-PyDev console: starting.
-Python 3.8.3 (tags/v3.8.3:6f8c832, May 13 2020, 22:20:19) [MSC v.1925 32 bit (Intel)] on win32
 ord("a")
 97
 ord("A")
@@ -46,3 +44,52 @@ list(range(5, 8, 2))
 
 for i in range(18)
     print(i/2)
+
+def my_f():
+    global n #nonlocal
+    r1 = 56
+    r2 = 57
+    r3 = 58
+    n =(r1*r2)/r3
+    total = n**5
+    return total
+print(my_f())
+print(n)
+
+
+
+
+try:
+    num = int(num)
+    num2 = int(num2)
+    n = int(num / num2)
+    print((str(num)) + ":" + (str(num2)) + "=" + (str(n)))
+except (ValueError, ZeroDivisionError):
+    print("ERROR, it's 0 or not number.")
+OK = input("OK?")
+
+
+def my_fi():
+    name_1 = input("Insert your name:")
+    surname = input("Insert your surname:")
+    year = input("Insert your year of a birth:")
+    town = input("Insert your city:")
+    mail = input("Insert your email:")
+    phone = input("Insert your phone number:")
+print(my_fi(name, surname, year, town, mail, phone))
+
+
+def my_fi(**kwargs):
+    f_1 = input("Insert your name:")
+    f_2 = input("Insert your surname:")
+    f_3 = input("Insert your year of a birth:")
+    f_4 = input("Insert your city:")
+    f_5 = input("Insert your email:")
+    f_6 = input("Insert your phone number:")
+    print(my_fi(f_1, f_2, f_3, f_4, f_5, f_6))
+
+print(my_fi(f_1, f_2, f_3, f_4, f_5, f_6))
+
+OK = input("OK?")
+
+def my_f(f_1=f1, f_2=f2, f_3=f3,f_4=f4, f_5=f5, f_6=f6):
