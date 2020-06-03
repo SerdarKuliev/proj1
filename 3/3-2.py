@@ -4,10 +4,7 @@
 # Реализовать вывод данных о пользователе одной строкой.
 
 def my_f(f1, f2, f3, f4, f5, f6):
-    return f1 + f2 + f3 + f4 + f5 + f6
+    return f1, f2, f3, f4, f5, f6
 print(my_f(input("Insert your name: "), input("Insert your surname: "), input("Insert your year of a birth: "), input("Insert your city: "), input("Insert your email: "), input("Insert your phone number: ")))
-
-# Не выходит разделить данные в 8 строке, ни join ни split не помогли
-
 
 
