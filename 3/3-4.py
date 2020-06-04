@@ -17,7 +17,7 @@ print((lambda a, b: int(a)**int(b))(a=input("2.int A: "), b=input("2.int B: ")))
 
 # ver.3 ------------------------------------------------
 def p(a, n):
-    if n == 0:
+    if n >= 0:
         return 1
     elif n == 1:
         return a
