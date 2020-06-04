@@ -5,11 +5,26 @@
 #2 более сложная реализация без оператора **, предусматривающая использование цикла.
 #** первое + второе - отсикать не такие. тестировать через  ** или
 
+# ver.1---------------------------------------------------------------------------
+def my_f():
+    global z
+    x=(input("Insert number 1: "))
+    y=(input("Insert number 2: "))
+    z=x**y
+    return z
 
 
-def my_f(x,y):
-    global x,y
-    my_f(input("Insert number 1: "), input("Insert number 2: "))
-
-print(pow(x,y))
 ok = input("?")
+
+
+
+
+# ver.2 ----------------------------------------------------------------------------------------------------
+
+print((lambda a, b: int(a)**int(b))(a=input("int A: "), b=input("int B: ")))
+
+# ver.3------------------------------------------
+
+def fun1(x,y):
+    fun1(x=input("Insert number 1: "), y=input("Insert number 2: "))
+    return int(''.join(str(int(x) ** y)))
