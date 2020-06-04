@@ -7,9 +7,21 @@
 
 def my_func(**kwargs):
     return kwargs
+massive = list(map(int, input("any, but not ~: ").split()))
+if list != "~":
+    sum = 0
+    for i in massive:
+        sum += i
+    print(sum)
+    massive.append(map(int, input("more: ").split()))
+    if list != "~":
+            sum = sum+i
+            for i in massive:
+                    sum += i
+    print(sum)
 
-a = list(map(int, input().split()))
-print(my_func(' '.join(input("Insert numbers: "))))
+
+
 
 
 
