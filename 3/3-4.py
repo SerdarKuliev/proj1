@@ -5,26 +5,44 @@
 #2 более сложная реализация без оператора **, предусматривающая использование цикла.
 #** первое + второе - отсикать не такие. тестировать через  ** или
 
-# ver.1---------------------------------------------------------------------------
-def my_f():
-    global z
-    x=(input("Insert number 1: "))
-    y=(input("Insert number 2: "))
-    z=x**y
-    return z
-
-
-ok = input("?")
-
-
-
+# ver.1------------------------------------------
+def fun1(x,y):
+     return int(''.join(str(int(x)**int(y))))
+x=input("1.Insert number 1: ")
+y=input("1.Insert number 2: ")
+print((fun1(x,y)))
 
 # ver.2 ----------------------------------------------------------------------------------------------------
+print((lambda a, b: int(a)**int(b))(a=input("2.int A: "), b=input("2.int B: ")))
 
-print((lambda a, b: int(a)**int(b))(a=input("int A: "), b=input("int B: ")))
+# ver.3 ------------------------------------------------
+def p(a, n):
+    if n == 0:
+        return 1
+    elif n == 1:
+        return a
+    elif n % 2 != 0:
+        return a * p(a, n - 1)
+    elif n % 2 == 0:
+        return p(a * a, n / 2)
 
-# ver.3------------------------------------------
+a = float(input("3.1:"))
+n = int(input("3.2:"))
+print(p(a, n))
 
-def fun1(x,y):
-    fun1(x=input("Insert number 1: "), y=input("Insert number 2: "))
-    return int(''.join(str(int(x) ** y)))
+# ver.4 ------------------------------------------------------------------------------
+def v():
+    v1 = int(input("4.Укажите 1: "))
+    v2 = int(input("4.Укажите 2: "))
+    v3 = v1 ** v2
+    return v3
+v4 = v()
+print(v4)
+
+# ver.5 ---------------------------------------------------------------------------
+def my_f():
+    x=int(input("5.Inumber 1: "))
+    y=int(input("5.Inumber 2: "))
+    return (pow(x,y))
+o = my_f()
+print (o)
