@@ -11,8 +11,8 @@ massive = list(map(int, input("any, but not ~: ").split()))
 if list != "~":
     sum = 0
     for i in massive:
-        sum += i
-    print(sum)
+       sum += i
+    print(str(sum))
     massive.append(map(int, input("more: ").split()))
     if list != "~":
             sum = sum+i
@@ -21,6 +21,20 @@ if list != "~":
     print(sum)
 
 
+def my():
+    res = 0
+    while True:
+        numbers = input('Enter numbers or ~ to exit: ').split()
+        for i in numbers:
+            try:
+                if i == '*':
+                    print(f'Sum is {res}. Exit')
+                    return
+                else:
+                    res += int(i)
+            except ValueError:
+                print('Enter number or *')
+        print(f'Sum is {res}')
 
 
 

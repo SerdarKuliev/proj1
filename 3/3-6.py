@@ -13,3 +13,12 @@ def int_func(var_2):
     return var_2.title()
 var_2 = str(input("2: "))
 print(int_func(var_2))
+
+
+
+
+
+
+
+
+
