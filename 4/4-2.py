@@ -5,5 +5,8 @@
 
 
 new_list = (300, 2, 12, 44, 1, 1, 4, 10, 7, 1, 78, 123, 55)
-list = str (i for i in range(len(new_list)-1), ( i for i in new_list if i[i]<i[i+1]))
+list = []
+for i in range(len(new_list)-1):
+    if new_list[i] < new_list[i+1]:
+        list.append(new_list[i+1])
 print(list)
