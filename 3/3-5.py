@@ -5,17 +5,34 @@
 #Если специальный символ введен после нескольких чисел, то вначале нужно добавить сумму этих чисел к полученной ранее
 #сумме и после этого завершить программу.
 
-def my_func(**kwargs):
-    return kwargs
+def e_5():
+    s = 0
+    while True:
+        numbers = (int(input('number or ~ to exit: ')).split())
+        for i in numbers:
+            try:
+                if i == '~':
+                    print(f'Sum is: {s}. Exit')
+                    return
+                else:
+                    s += int(i)
+                    print(str(s))
+            except ValueError:
+                print('Enter number or ~')
+        print(f'Sum is {s}')
+
+
+def my_func():
+    return
 massive = list(map(int, input("any, but not ~: ").split()))
 if list != "~":
     sum = 0
     for i in massive:
        sum += i
     print(str(sum))
-    massive.append(map(int, input("more: ").split()))
+
     if list != "~":
-            sum = sum+i
+            sum += int(i)
             for i in massive:
                     sum += i
     print(sum)
@@ -27,13 +44,13 @@ def my():
         numbers = input('Enter numbers or ~ to exit: ').split()
         for i in numbers:
             try:
-                if i == '*':
+                if i == '~':
                     print(f'Sum is {res}. Exit')
                     return
                 else:
                     res += int(i)
             except ValueError:
-                print('Enter number or *')
+                print('Enter number or ~')
         print(f'Sum is {res}')
 
 
