@@ -150,3 +150,42 @@ def my_f():
 
 
 print(my_f())
+
+def my_func():
+    return
+massive = list(map(int, input("any, but not ~: ").split()))
+if list != "~":
+    sum = 0
+    for i in massive:
+       sum += i
+    print(str(sum))
+
+    if list != "~":
+            sum += int(i)
+            for i in massive:
+                    sum += i
+    print(sum)
+
+
+def my():
+    res = 0
+    while True:
+        numbers = input('Enter numbers or ~ to exit: ').split()
+        for i in numbers:
+            try:
+                if i == '~':
+                    print(f'Sum is {res}. Exit')
+                    return
+                else:
+                    res += int(i)
+            except ValueError:
+                print('Enter number or ~')
+        print(f'Sum is {res}')
+
+
+
+
+
+
+
+OK = input("OK?")
