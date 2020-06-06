@@ -5,7 +5,13 @@
 #Подсказка: факториал числа n — произведение чисел от 1 до n. Например, факториал четырёх 4! = 1 * 2 * 3 * 4 = 24.
 
 
-my_list = [1, 2, 3, 4, 5, 6]
-my_sec_list =[11, 22, 33, 44, 55]
-new_list = [i + j for i in my_list if i % 2 == 0 for j in my_sec_list]
-print(new_list)
+#factorial = 1
+#print(factorial)
+
+
+def fac(el=int(input('_:'))):
+    for el in fact(el):
+        yield
+print (fac())
+
+
