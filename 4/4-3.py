@@ -1,9 +1,7 @@
-#random()
-#randint()
-#randrange()
+#Для чисел в пределах от 20 до 240 найти числа, кратные 20 или 21. Необходимо решить задание в одну строку.
+#Подсказка: использовать функцию range() и генератор.
+
 
 from random import randint, randrange, random
 
-print(randint(0,1000))
-print(randrange(100,1000, 40))
-print(random()*10000)
+print( if i in ((randrange(20,240, 20))) % 20 == 0):

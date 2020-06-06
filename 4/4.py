@@ -1,3 +1,14 @@
+#4.2-------------------------------------------------------------
+new_list = (300, 2, 12, 44, 1, 1, 4, 10, 7, 1, 78, 123, 55)
+list = []
+for i in range(len(new_list)-1):
+    if new_list[i] < new_list[i+1]:
+        list.append(new_list[i+1])
+print(list)
+#4.3---------------------------------------------------------------
+
+
+
 #мпорт модклей
 
 def sg_m():
@@ -42,3 +53,13 @@ print(len(new_obj))
 
 print(next(new_obj))
 print(list(new_obj))
+
+#random()
+#randint()
+#randrange()
+
+from random import randint, randrange, random
+
+print(randint(0,1000))
+print(randrange(100,1000, 40))
+print(random()*10000)
