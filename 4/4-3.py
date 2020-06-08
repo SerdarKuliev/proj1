@@ -2,6 +2,5 @@
 #Подсказка: использовать функцию range() и генератор.
 
 
-from random import randint, randrange, random
-
-print( if i in ((randrange(20,240, 20))) % 20 == 0):
+from random import randrange
+print(randrange(20, 240) for i in range(20))
