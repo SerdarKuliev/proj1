@@ -5,5 +5,3 @@ def gen():
 for el in gen():
     print(el)
 
-
-умножение редьюс
