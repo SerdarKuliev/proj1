@@ -3,6 +3,4 @@
 #Для выполнения расчета для конкретных значений необходимо запускать скрипт с параметрами.
 
 import my_func
-def msg(w1,w2,w3):
-
-print(msg())
+print(str(my_func.my_f(int(input("time")), int(input("price")), int(input("премия")))))
