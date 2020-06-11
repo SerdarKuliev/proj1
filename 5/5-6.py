@@ -1,0 +1,1 @@
+with open ("text_6.txt", "r") as text6:
