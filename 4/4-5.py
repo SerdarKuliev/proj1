@@ -1,7 +1,9 @@
-def gen():
-    for i in(10, 20, 30 ,40):
-        yield i
+from functools import reduce
 
-for el in gen():
-    print(el)
+def gen(x,y):
+    return x*y
+
+list= [el for el in range(100,1001,2)]
+print(f"list: {list}\nNumbers: {reduce(gen,list)}")
+
 

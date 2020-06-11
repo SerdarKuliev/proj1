@@ -1,10 +1,17 @@
-my_list = [1, 2, 3, 4, 5, 6]
-new_list = [i +10 for i in my_list if i % 2 == 0]
+from itertools import count, cycle
 
-for i in new_list:
+print('Генератор цифр, что б выйти жми "~"')
+for i in count (int(input('inter number: '))):
+    print(1, end='')
+    quit = input()
+    if quit == '~':
+        break
 
+print('Генератор цифр, что б выйти жми "+"').split()
+list = input('inter number: ')
+iter=cycle(list)
+quit = None
 
-    print(i)
-
-
-объединение задач в одну поуправлять с некс или альта
+while quit !=0:
+    print(next(iter), end='')
+    quit=input()
