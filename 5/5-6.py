@@ -1,15 +1,8 @@
 with open ("text_6.txt", "r") as text6:
+    a = text6.readlines()
+    for i in a:
+        new_str = ''.join((q if q in '123456789' else ' ') for q in i)
+        new_2 = [int(q) for q in new_str.split()]
+        print(f"{i.split()[0]}{sum(new_2)}")
 
-
-
-        s_sum = []
-        less = []
-        line = ser.read().split('\n')
-        for i in line:
-            i = i.split()
-            if float(i[1]) < 20000:
-                less.append(i[0])
-            s_sum.append(i[1])
-
-    print(f" Менее 20 000 {less} Средняя {sum(map(float, s_sum)) / len(s_sum)}!")
 
