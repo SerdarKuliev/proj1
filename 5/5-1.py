@@ -18,3 +18,12 @@ lines = [input("ВВЕДИ ФИО:"), input("ВОЗРАСТ:"), input("ВЕРО�
 with open("ex1-3.txt", "w+") as file:
     for  line in lines:
         file.write(line + '\n')
+
+
+#Var4-------------------------------------------------------------
+with open("ex1.txt", "w+", encoding='utf-8') as ser:
+    while True:
+        line = input("ВВЕДИ: ")
+        if not line:
+            break
+        print (line, file=ser)
