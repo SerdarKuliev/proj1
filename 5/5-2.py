@@ -1,7 +1,7 @@
-ser = open("ex2.txt", "w+", encoding='utf-8')
-ser.writelines([input("ВВЕДИ ФИО:"), "\n", input("ВОЗРАСТ:"), "\n", input("ВЕРОИСПОВЕДАНИЕ:"), "\n"])
-con = 0
-for line in ser:
-    con += 1
-print(con)
-ser.close()
+count = 0
+with open("ex2.txt", "r", encoding='utf-8') as ser:
+    for line in ser:
+        count += 1
+        line_words = line.split()
+        print(line, 'dlina stroki', len(line_words))
+    print('vsego', count)
