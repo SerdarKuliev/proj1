@@ -7,20 +7,16 @@
 #Например: 20м * 5000м * 25кг * 5см = 12500 т
 
 class Road:
-    length = 5000
-    width = 20
-    mass = "mass"
-    up = "up"
+    def __init__(self, length, width):
+        self._length = length
+        self._width = width
+        self.weight = 25
+        self.height = 5
 
-    def __init__(self, length, width, mass, up):
-        self.mass = mass
-        self.up = up
-        r = (self.length * self.width * self.mass * self.up * 0.001)
-        return (r)
-
-
-
+    def asphalt_mass(self):
+        asphalt_mass = (self._length * self._width * self.weight * self.height * 0.001)
+        return (asphalt_mass)
 
 r = Road
-print(r.__init__(Road.length, Road.width, self.mass==int(input(":")), self.up==int(input(":"))))
+print(r.asphalt_mass(length == int(input(":")), width == int(input(":"))))
 
