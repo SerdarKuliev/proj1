@@ -1,30 +1,26 @@
+#2. Реализовать класс Road (дорога), в котором определить атрибуты: length (длина), width (ширина).
+#Значения данных атрибутов должны передаваться при создании экземпляра класса.
+#Атрибуты сделать защищенными.
+#Определить метод расчета массы асфальта, необходимого для покрытия всего дорожного полотна.
+#Использовать формулу: длина * ширина * масса асфальта для покрытия одного кв метра дороги асфальтом,
+#толщиной в 1 см * число см толщины полотна. Проверить работу метода.
+#Например: 20м * 5000м * 25кг * 5см = 12500 т
+
 class Road:
-    length = "Lexus"
-    width = "RX 350L"
-    auto_year = 2019
+    length = 5000
+    width = 20
+    mass = "mass"
+    up = "up"
 
-    def __init__(self, _modes):
-        self._modes = "color"
-
-    def _red(self):
-        self._modes = "red"
-        return(f"Red, wait, {time.sleep(15)} ")   # Думал обратный отсчет получится.
-
-
-    def _yellow(self):
-        self._modes = "yellow"
-        return(f"Yellow, wait, {time.sleep(7)} ")
-
-
-    def _green(self):
-        self._modes = "green"
-        return(f"Green, go-go-go, {time.sleep(2)} ")
+    def __init__(self, length, width, mass, up):
+        self.mass = mass
+        self.up = up
+        r = (self.length * self.width * self.mass * self.up * 0.001)
+        return (r)
 
 
 
-r = TrafficLight('red')
-print(r._red())
-y = TrafficLight('yellow')
-print(y._yellow())
-g = TrafficLight('green')
-print(g._green())
+
+r = Road
+print(r.__init__(Road.length, Road.width, self.mass==int(input(":")), self.up==int(input(":"))))
+
