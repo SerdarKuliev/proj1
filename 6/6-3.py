@@ -2,11 +2,11 @@ class Worker:
     name = "Sergey"
     surname = "Frolov"
     position = "manager"
-    income = {"wage": wage, "bonus": bonus}
+    income = {"wage": int(wage), "bonus": int(bonus)}
 
 class Position(Worker):
     get_full_name = Worker.name + Worker.surname
-    get_total_income = (Worker.wage: int(input(": ")) + Worker.bonus: int(input(": ")))
+    get_total_income = (Worker.wage: input(": ") + Worker.bonus: input(": "))
 
     def start(self):
         print(f"111")
